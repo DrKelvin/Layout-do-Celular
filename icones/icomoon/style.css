@@ -1,0 +1,114 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?rvh3br');
+  src:  url('fonts/icomoon.eot?rvh3br#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?rvh3br') format('truetype'),
+    url('fonts/icomoon.woff?rvh3br') format('woff'),
+    url('fonts/icomoon.svg?rvh3br#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-locked:before {
+  content: "\e901";
+}
+.icon-secure:before {
+  content: "\e901";
+}
+.icon-lock:before {
+  content: "\e903";
+}
+.icon-security:before {
+  content: "\e903";
+}
+.icon-private:before {
+  content: "\e903";
+}
+.icon-encryption:before {
+  content: "\e903";
+}
+.icon-lock-rounded:before {
+  content: "\e904";
+}
+.icon-lock1:before {
+  content: "\e905";
+}
+.icon-pause:before {
+  content: "\e906";
+}
+.icon-skip_next:before {
+  content: "\e907";
+}
+.icon-skip_previous:before {
+  content: "\e908";
+}
+.icon-access_alarms:before {
+  content: "\e909";
+}
+.icon-battery_charging_full:before {
+  content: "\e90a";
+}
+.icon-battery_full:before {
+  content: "\e90b";
+}
+.icon-network_wifi:before {
+  content: "\e900";
+}
+.icon-signal_cellular_4_bar:before {
+  content: "\e90c";
+}
+.icon-signal_cellular_connected_no_internet_4_bar:before {
+  content: "\e90d";
+}
+.icon-signal_cellular_null:before {
+  content: "\e90e";
+}
+.icon-network_locked:before {
+  content: "\e90f";
+}
+.icon-vibration:before {
+  content: "\e910";
+}
+.icon-send:before {
+  content: "\e902";
+}
+.icon-signal:before {
+  content: "\f012";
+}
+.icon-phone:before {
+  content: "\f095";
+}
+.icon-phone-square:before {
+  content: "\f098";
+}
+.icon-dollar:before {
+  content: "\f155";
+}
+.icon-usd:before {
+  content: "\f155";
+}
+.icon-instagram:before {
+  content: "\f16d";
+}
+.icon-wifi:before {
+  content: "\f1eb";
+}
+.icon-whatsapp:before {
+  content: "\f232";
+}

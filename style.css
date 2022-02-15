@@ -1,0 +1,337 @@
+*{
+  padding: 0;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#celular{
+  background-color: black;
+  height: 600px;
+  width: 320px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#pingo{
+  background-color: black;
+  height: 28px;
+  width: 28px;
+  position: absolute;
+  z-index: 3;
+  border-radius: 50%;
+  top: 5px;
+}
+
+#pingo::before{
+  content: "";
+  background-color: black;
+  width: 40px;
+  height: 20px;
+  z-index: 3;
+  border-radius: 600%;
+  transform: rotate(-10deg);
+  position: absolute;
+  right: -7px;
+  top: -2px;
+}
+
+#pingo::after{
+  content: "";
+  background-color: black;
+  width: 40px;
+  height: 20px;
+  z-index: 3;
+  border-radius: 600%;
+  transform: rotate(10deg);
+  position: absolute;
+  right: -4px;
+  top: -2px;
+}
+
+#tela{
+  position: relative;
+}
+
+#tela .papel-de-parede{
+  height: 560px;
+  width: 300px;
+  border-radius: 20px;
+  z-index: 2;
+}
+
+#tela .icon-lock1{
+  color: white;
+  font-size: 1.6rem;
+  position: absolute;
+  top: 24px;
+  left: 138px;
+}
+
+#barraDeNotificacao{
+  background-color: transparent;
+  height: 15px;
+  width: 300px;
+  position: absolute;
+  top: 2px;
+  z-index: 2;
+  border-radius: 20px 20px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#barraDeNotificacao .barra_not_primeira{
+  width: 150px;
+  display: flex;
+  align-items: center;
+}
+
+#barraDeNotificacao .barra_not_segunda{
+  width: 150px;
+  display: flex;
+  align-items: center;
+}
+
+#operadoras{
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 500;
+  margin-left: 14px;
+  display: flex;
+  align-items: center;
+  padding-top: 2px;
+}
+
+#barraDeNotificacao .barra_not_segunda .icon-vibration{
+  font-size: 12px;
+  color: white;
+  margin-left: 28px;
+}
+
+#barraDeNotificacao .barra_not_segunda .icon-access_alarms{
+  font-size: 12px;
+  color: white;
+  margin-left: 4px;
+}
+
+#barraDeNotificacao .barra_not_segunda .icon-wifi{
+  font-size: 12px;
+  color: white;
+  margin-left: 4px;
+}
+
+#barraDeNotificacao .barra_not_segunda .icon-signal_cellular_4_bar{
+  font-size: 12px;
+  color: white;
+}
+
+#barraDeNotificacao .barra_not_segunda .icon-signal_cellular_null{
+  font-size: 12px;
+  color: white;
+}
+
+#barraDeNotificacao .barra_not_segunda .battery_level{
+  padding-top: 2px;
+  font-size: 10px;
+  color: white;
+  margin-left: 2px;
+}
+
+#barraDeNotificacao .barra_not_segunda .icon-battery_full{
+  font-size: 14px;
+  color: white;
+}
+
+#relogio{
+  height: 60px;
+  width: 300px;
+  position: absolute;
+  background-color: transparent;
+  z-index: 3;
+  top: 6rem;
+}
+
+#rel{
+  font-size: 2.6rem;
+  font-weight: 500;
+  color: white;
+  font-family: 'Poppins',sans-serif;
+  margin-left: 1rem;
+}
+
+#data{
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: .8rem;
+  position: absolute;
+  left: 1.2rem;
+  top: 3rem;
+}
+
+#widget1{
+  width: 290px;
+  height: 70px;
+  border-radius: 12px;
+  position: absolute;
+  margin: 0 5px 0 5px;
+  top: 12rem;
+  background-color: #78668e;
+}
+
+#widget1 .header_widget1{
+  height: 20px;
+  width: 290px;
+  margin-top: 6px;
+  font-size: 12px;
+  color: white;
+  display: flex;
+  align-items: center;
+  z-index: 5;
+}
+#widget1 .header_widget1 span{
+  text-align: left;
+  height: 14px;
+}
+
+#widget1 .header_widget1 span marquee{
+  display: inline-block;
+  width: 100px;
+  margin-right: 80px;
+}
+
+#widget1 .header_widget1 .icon-spotify{
+  height: 12px;
+  width: 12px;
+  margin: 0 6px 0 12px;
+}
+
+#widget1 .header_widget1 .icon-dropdown{
+  height: 14px;
+  width: 14px;
+  z-index: 5;
+}
+
+#widget1 .content_widget1{
+  height: 40px;
+  width: 290px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+#widget1 .content_widget1 .nomes{
+  height: 40px;
+  position: relative;
+}
+
+#widget1 .content_widget1 .nomes a, #widget1 .content_widget1 .nomes p{
+  margin-left: 12px;
+  font-family: 'Poppins', sans-serif;
+}
+
+#widget1 .content_widget1 .nomes a{
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  transition: color .2s ease-in-out;
+}
+
+#widget1 .content_widget1 .nomes a:hover{
+  color: rgba(255, 255, 255, 0.501);
+}
+
+#widget1 .content_widget1 .nomes p{
+  font-size: 12px;
+  position: absolute;
+  top: 19px;
+}
+
+#widget1 .content_widget1 .buttons{
+  color: white;
+  font-size: 1.8rem;
+  margin-left: 1.2rem;
+}
+
+#widget1 .content_widget1 .buttons span{
+  cursor: pointer;
+  transition: color .2s ease-in-out;
+}
+
+#widget1 .content_widget1 .buttons span:hover{
+  color: rgba(255, 255, 255, 0.501);
+}
+
+#widget1 .content_widget1 .img-album{
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  border-radius: 0 12px 12px 0;
+  -webkit-mask-image: linear-gradient(to right, transparent 8%, black 100%)
+}
+
+#text-info{
+  color: white;
+  font-size: 11px;
+  position: absolute;
+  bottom: 50px;
+  left: 77px;
+}
+
+#footer{
+  position: absolute;
+  bottom: 10px;
+  height: 50px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#footer .telefone-button{
+  background-color: rgb(0, 252, 0);
+  height: 30px;
+  width: 30px;
+  border-radius: 8px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer .telefone-button img{
+  width: 23px;
+  height: 23px;
+}
+
+#footer .camera-button{
+  background-color: #7626ff;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer .camera-button img{
+  width: 25px;
+  height: 25px;
+}
